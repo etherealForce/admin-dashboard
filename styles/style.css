@@ -44,6 +44,7 @@ body {
     grid-template: repeat(2, 1fr) / 2fr 1fr;
     padding: 10px 50px;
     background-color: #8DC6FF;
+    column-gap: 20px;
 }
 
 .main-content { 
@@ -127,6 +128,42 @@ a {
 
 .header input {
     width: 80%;
-    border-radius: 10px;
+    border-radius: 13px;
     background-color: #E4F1FE;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.user-field svg {
+    width: 20px;
+    height: auto;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+
+.user-field {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.user-display {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+#hero-img {
+    width: 80px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.user-main {
+    display: flex;
 }
