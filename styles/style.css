@@ -89,7 +89,7 @@ li {
     grid-column: 2 / 3; 
 }
 
-li svg {
+li svg, .box-options svg, .user-field svg {
     width: 20px;
     height: auto;
 }
@@ -135,10 +135,6 @@ a {
     font-size: 13px;
 }
 
-.user-field svg {
-    width: 20px;
-    height: auto;
-}
 
 img {
     width: 50px;
@@ -162,13 +158,14 @@ img {
 
 #hero-img {
     width: 60px;
-    height: auto;
+    height: 60px;
     border-radius: 100%;
 }
 
 .user-main {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
 }
 
 .user-main p {
@@ -202,8 +199,46 @@ img {
 
 .main-content {
     padding: 20px 25px 7px 10px;
+    background-color: #E4F1FE;
 }
 
 .projects {
-
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 15px;
 } 
+
+.project-boxes {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project {
+    border-radius: 5px;
+    box-shadow: -7px 0 0 #22313F,
+    3px 5px 5px grey;
+    background-color: #8DC6FF;
+    padding: 23px 10px 23px 10px;
+}
+
+.share, .viewed, .favourite {
+    color:inherit;
+    background-color: inherit;
+    border:none;
+    width: 25px;
+    height: auto;
+}
+
+.project-name {
+    font-size: 18px;
+    font-weight:700;
+}
+
+.box-options {
+    margin-top:30px;
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
