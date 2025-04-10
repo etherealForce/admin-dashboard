@@ -45,6 +45,7 @@ body {
     padding: 10px 50px;
     background-color: #8DC6FF;
     column-gap: 20px;
+    box-shadow:0 5px 5px grey;
 }
 
 .main-content { 
@@ -150,6 +151,7 @@ img {
     display: flex;
     align-items: center;
     gap: 25px;
+    padding-left: 50px;
 }
 
 .user-display {
@@ -159,11 +161,49 @@ img {
 
 
 #hero-img {
-    width: 80px;
+    width: 60px;
     height: auto;
     border-radius: 100%;
 }
 
 .user-main {
     display: flex;
+    gap: 10px;
 }
+
+.user-main p {
+    font-weight:700;
+    font-size: 24px;
+}
+
+.user-main .greet {
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.user-options {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.user-buttons {
+    border-radius: 30px;    
+    padding: 10px 30px;
+    background-color:#34495E;
+    color:#E4F1FE;
+    font-size: 12px;
+    font-weight: 500px;
+}
+
+.user-buttons:active {
+    background-color: #22313F;
+}
+
+.main-content {
+    padding: 20px 25px 7px 10px;
+}
+
+.projects {
+
+} 
